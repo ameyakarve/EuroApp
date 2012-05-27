@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+
+		<title>My Euro RG</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/buttons.css" type="text/css" media="screen" />
+		<script src="http://platform.twitter.com/anywhere.js?id=AZOHKBShEevEn6z9Fnuwzg&v=1" type="text/javascript"></script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   0,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	0,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   10000,		// Length between transitions
+					transition              :   6, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   0,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   0,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'false',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	0,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														{image : 'http://s13.postimage.org/pmy25uy0n/image.jpg'},
+														{image : 'http://s13.postimage.org/jaiww0uyf/image.jpg'},  
+														{image : 'http://s13.postimage.org/k1bn1sxbr/image.jpg'},
+														{image : 'http://s13.postimage.org/skv0zk5o7/image.jpg'}
+														
+												],
+												
+					// Theme Options			   
+					progress_bar			:	0,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+			.login{position:relative;top:60%;display:block;margin-left:auto;margin-right:auto;}
+			h3{color:#fff;}
+			.subtitle
+			{
+				font-size:14px;
+			}
+	</style>
+	<script src="js/jquery.fittext.js"></script>
+
+<body>
+	<div class="login" align="center">
+	<a href="https://graph.facebook.com/oauth/authorize?redirect_uri=http://www.myeur.org/logged&client_id=319087381501577">
+	<img src=" http://s14.postimage.org/9qxnbar29/image.png"/></a>
+	<H3>OR</H3>
+	<a href="{{google_url}}">
+	<img src=" http://s14.postimage.org/x6fkgnatd/gog.png"/>
+	</a>
+	</div>
+	<!--Demo styles (you can delete this block)-->
+	<h1 align="center" id="header">MYEUR.ORG
+	<p class="subtitle">A fantasy League for Euro 2012<br/>
+	Be the manager->Pick your players->Win<br/>
+	</p></h1>
+	<script>
+		$("#header").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+	</script>
+	<ul id="demo-block">
+		
+	</ul>
+	
+	</div>
+
+</body>
+</html>
