@@ -1,5 +1,5 @@
 /* 
-* Amazium V1.0.1
+* Amazium V1.0.2
 * Copyright 2012, Mike Ballan
 * www.amazium.co.uk
 */
@@ -143,12 +143,3 @@
 	.row, 
 	.clearfix 							{ zoom:1; }
 	.clear 								{ clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;	}
-	#error {
-	color:red;
-	font-size:10px;
-	display:none;
-}
-.needsfilled {
-	background:red;
-	color:white;
-}
